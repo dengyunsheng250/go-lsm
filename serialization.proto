@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package lsm;
+
+option go_package = "github.com/dengyunsheng250/go-lsm";
+
+
+message BloomFilter {
+ repeated bool bitset = 1;
+ int64 size = 2;
+}
+
+
+
